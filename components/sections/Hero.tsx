@@ -37,16 +37,23 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Logo */}
-          <div className="mb-6">
-            <Image
-              src="/logo/logo.png"
-              alt="Elohim Vidros — Esquadrias e Alumínios"
-              width={280}
-              height={96}
-              className="h-20 w-auto object-contain"
-              priority
-            />
+          {/* Logo — destaque principal */}
+          <div className="mb-8 inline-block">
+            <div
+              className="glass rounded-2xl px-8 py-5 border border-white/15"
+              style={{
+                boxShadow: '0 0 40px rgba(212,168,67,0.15), 0 0 80px rgba(212,168,67,0.05)',
+              }}
+            >
+              <Image
+                src="/logo/logo.png"
+                alt="Elohim Vidros — Esquadrias e Alumínios"
+                width={360}
+                height={120}
+                className="h-24 w-auto object-contain drop-shadow-lg"
+                priority
+              />
+            </div>
           </div>
 
           {/* Glass panel for subtitle */}
