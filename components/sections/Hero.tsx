@@ -42,9 +42,12 @@ export default function Hero() {
           {/* Left — text content */}
           <div>
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 glass rounded-full border border-white/25">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ffffff] animate-pulse" />
-              <span className="text-white text-xs font-medium tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 glass rounded-full border border-[#d4a843]/35">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#d4a843] animate-pulse" />
+              <span
+                className="text-xs font-medium tracking-widest uppercase"
+                style={{ background: 'linear-gradient(90deg, #d4a843, #f0c96a, #d4a843)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
+              >
                 20+ anos de excelência em Ibaiti, PR
               </span>
             </div>
