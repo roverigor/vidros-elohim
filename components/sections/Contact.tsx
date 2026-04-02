@@ -109,7 +109,6 @@ export default function Contact() {
 
           {/* CTA glass card */}
           <div className="glass rounded-2xl p-8 border border-white/10 text-center">
-            <div className="text-4xl mb-4">💬</div>
             <h3 className="text-white font-bold text-xl mb-2">Orçamento gratuito</h3>
             <p className="text-white/50 text-sm mb-8 leading-relaxed">
               Envie uma mensagem agora e receba seu orçamento sem compromisso.
@@ -127,7 +126,7 @@ export default function Contact() {
               Falar no WhatsApp Agora
             </a>
             <p className="text-white/25 text-xs mt-4">
-              📍 Av. Gov. Paulo Cruz Pimentel, 718 — Ibaiti, PR
+              Av. Gov. Paulo Cruz Pimentel, 718 — Ibaiti, PR
             </p>
           </div>
         </div>
