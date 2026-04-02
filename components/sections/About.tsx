@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const WHATSAPP_URL = 'https://wa.me/5543984247962?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!';
 
 const HIGHLIGHTS = [
@@ -74,8 +76,29 @@ export default function About() {
             </a>
           </div>
 
-          {/* Right — stat cards (aluminum glass) */}
+          {/* Right — team photo + stat cards */}
           <div className="flex flex-col gap-4">
+            {/* Team photo */}
+            <div
+              className="relative overflow-hidden rounded-2xl"
+              style={{
+                boxShadow: '0 0 40px rgba(212,168,67,0.10), inset 0 0 0 1px rgba(200,205,214,0.15)',
+              }}
+            >
+              <Image
+                src="/Screenshot_1.png"
+                alt="Equipe Elohim Vidros"
+                width={600}
+                height={360}
+                className="w-full object-cover"
+                style={{ maxHeight: '220px' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080c18]/60 to-transparent" />
+              <div className="absolute bottom-3 left-4">
+                <span className="text-white/70 text-xs tracking-widest uppercase">Nossa equipe</span>
+              </div>
+            </div>
+
             {HIGHLIGHTS.map((item) => (
               <div
                 key={item.label}

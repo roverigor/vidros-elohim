@@ -1,99 +1,53 @@
+import Image from 'next/image';
+
 const SERVICES = [
   {
     title: 'Esquadrias de Alumínio',
     desc: 'Janelas, portas e esquadrias com acabamento premium e vedação perfeita.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="3" y="3" width="18" height="18" rx="1" />
-        <line x1="3" y1="12" x2="21" y2="12" />
-        <line x1="12" y1="3" x2="12" y2="21" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-01.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Esquadrias%20de%20Alum%C3%ADnio!',
   },
   {
     title: 'Portas de Lambril',
     desc: 'Portas de lambril em alumínio com design clássico e resistência excepcional.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="4" y="2" width="16" height="20" rx="1" />
-        <line x1="4" y1="8" x2="20" y2="8" />
-        <line x1="4" y1="14" x2="20" y2="14" />
-        <circle cx="17" cy="12" r="1" fill="currentColor" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-02.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Portas%20de%20Lambril!',
   },
   {
     title: 'Portão Basculante',
     desc: 'Portões basculantes de alumínio com movimento suave e durabilidade garantida.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="2" y="8" width="20" height="12" rx="1" />
-        <path d="M2 8 L12 3 L22 8" />
-        <line x1="7" y1="12" x2="17" y2="12" />
-        <line x1="7" y1="15" x2="17" y2="15" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-03.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Port%C3%A3o%20Basculante!',
   },
   {
     title: 'Portão de Correr',
     desc: 'Portões deslizantes em alumínio, práticos e com aproveitamento total do espaço.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="2" y="4" width="14" height="16" rx="1" />
-        <line x1="6" y1="8" x2="12" y2="8" />
-        <line x1="6" y1="12" x2="12" y2="12" />
-        <line x1="6" y1="16" x2="12" y2="16" />
-        <path d="M18 8 L22 12 L18 16" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-04.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Port%C3%A3o%20de%20Correr!',
   },
   {
     title: 'Box de Banheiro',
     desc: 'Box em vidro temperado com perfis de alumínio — elegância e praticidade.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="3" y="3" width="9" height="18" rx="0.5" />
-        <rect x="12" y="3" width="9" height="18" rx="0.5" />
-        <path d="M12 3 L12 21" strokeDasharray="2 2" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-05.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Box%20de%20Banheiro!',
   },
   {
     title: 'Fechamento de Varandas',
     desc: 'Fechamento em vidro e alumínio que amplia o conforto da área externa.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="2" y="6" width="20" height="14" rx="1" />
-        <line x1="7" y1="6" x2="7" y2="20" />
-        <line x1="12" y1="6" x2="12" y2="20" />
-        <line x1="17" y1="6" x2="17" y2="20" />
-        <line x1="2" y1="4" x2="22" y2="4" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-06.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Fechamento%20de%20Varandas!',
   },
   {
     title: 'Cortinas de Vidro',
     desc: 'Cortinas de vidro temperado para varandas e ambientes sofisticados.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <line x1="3" y1="3" x2="21" y2="3" />
-        <rect x="3" y="3" width="4.5" height="18" rx="0.5" opacity="0.6" />
-        <rect x="9.75" y="3" width="4.5" height="15" rx="0.5" opacity="0.6" />
-        <rect x="16.5" y="3" width="4.5" height="18" rx="0.5" opacity="0.6" />
-      </svg>
-    ),
+    photo: '/hero-bg.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Cortinas%20de%20Vidro!',
   },
   {
     title: 'Espelhos',
     desc: 'Venda e instalação de espelhos sob medida para qualquer ambiente.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
-        <rect x="4" y="2" width="16" height="18" rx="1" />
-        <path d="M8 20 L8 22 M16 20 L16 22" />
-        <line x1="9" y1="20" x2="15" y2="20" />
-        <path d="M8 7 Q12 5 16 9" opacity="0.5" />
-      </svg>
-    ),
+    photo: '/portfolio/foto-01.jpg',
+    waMsg: 'Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7amento%20de%20Espelhos!',
   },
 ];
 
@@ -123,38 +77,45 @@ export default function Services() {
           {SERVICES.map((service) => (
             <div
               key={service.title}
-              className="group glass aluminum-surface glass-hover rounded-2xl p-6 transition-all duration-300 cursor-default"
+              className="group glass aluminum-surface rounded-2xl overflow-hidden flex flex-col transition-all duration-300"
+              style={{ border: '1px solid rgba(200,205,214,0.12)' }}
             >
-              {/* Icon in aluminum frame */}
-              <div className="w-12 h-12 rounded-xl mb-5 flex items-center justify-center text-[#c8cdd6] group-hover:text-[#d4a843] transition-colors"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(200,205,214,0.15), rgba(138,144,153,0.08))',
-                  border: '1px solid rgba(200,205,214,0.2)',
-                }}
-              >
-                {service.icon}
+              {/* Photo */}
+              <div className="relative w-full aspect-video overflow-hidden">
+                <Image
+                  src={service.photo}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-[#080c18]/30 group-hover:bg-[#080c18]/10 transition-all duration-300" />
               </div>
 
-              <h3 className="font-semibold text-white group-hover:text-[#d4a843] text-sm mb-2 transition-colors leading-tight">
-                {service.title}
-              </h3>
-              <p className="text-white/40 text-xs leading-relaxed">
-                {service.desc}
-              </p>
+              {/* Content */}
+              <div className="flex flex-col flex-1 p-4">
+                <h3 className="font-semibold text-white text-sm mb-1.5 leading-tight group-hover:text-[#d4a843] transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-white/40 text-xs leading-relaxed flex-1">
+                  {service.desc}
+                </p>
+
+                {/* WhatsApp button */}
+                <a
+                  href={`https://wa.me/5543984247962?text=${service.waMsg}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex items-center justify-center gap-2 bg-[#25D366]/10 hover:bg-[#25D366] border border-[#25D366]/30 hover:border-[#25D366] text-[#25D366] hover:text-white text-xs font-semibold py-2 px-3 rounded-lg transition-all duration-300"
+                >
+                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current shrink-0">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                  Solicitar orçamento
+                </a>
+              </div>
             </div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="https://wa.me/5543984247962?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#d4a843] hover:bg-[#f0c96a] text-[#080c18] font-bold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-[#d4a843]/20 text-sm"
-          >
-            Solicitar Orçamento pelo WhatsApp
-          </a>
         </div>
       </div>
     </section>

@@ -8,14 +8,8 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Real photo background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/Screenshot_1.png)' }}
-      />
-
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-[#080c18]/70" />
+      {/* Dark base */}
+      <div className="absolute inset-0 bg-[#080c18]" />
 
       {/* Glass reflection lines - aluminum effect */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
