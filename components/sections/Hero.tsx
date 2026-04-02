@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const WHATSAPP_URL = 'https://wa.me/5543984247962?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!';
 
 export default function Hero() {
@@ -35,19 +37,17 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6">
-            <span className="text-white">Elohim</span>
-            <br />
-            <span
-              className="text-transparent bg-clip-text"
-              style={{
-                backgroundImage: 'linear-gradient(135deg, #d4a843 0%, #f0c96a 50%, #d4a843 100%)',
-              }}
-            >
-              Vidros
-            </span>
-          </h1>
+          {/* Logo */}
+          <div className="mb-6">
+            <Image
+              src="/logo/logo.png"
+              alt="Elohim Vidros — Esquadrias e Alumínios"
+              width={280}
+              height={96}
+              className="h-20 w-auto object-contain"
+              priority
+            />
+          </div>
 
           {/* Glass panel for subtitle */}
           <div className="glass rounded-2xl p-6 mb-8 border border-white/10 max-w-lg">

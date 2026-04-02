@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const NAV_LINKS = [
   { href: '#sobre', label: 'Sobre' },
@@ -29,13 +30,15 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-tight group">
-          <span className="font-bold text-base tracking-[0.15em] text-white group-hover:text-[#d4a843] transition-colors">
-            ELOHIM VIDROS
-          </span>
-          <span className="text-[10px] tracking-[0.3em] text-[#d4a843] font-light">
-            ESQUADRIAS & ALUMÍNIOS
-          </span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/logo/logo.png"
+            alt="Elohim Vidros — Esquadrias e Alumínios"
+            width={140}
+            height={48}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

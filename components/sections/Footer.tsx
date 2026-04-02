@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const YEAR = new Date().getFullYear();
 
 export default function Footer() {
@@ -13,8 +15,13 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div>
-            <div className="font-bold text-base tracking-[0.15em] text-white">ELOHIM VIDROS</div>
-            <div className="text-[10px] tracking-[0.3em] text-[#d4a843] mt-0.5">ESQUADRIAS & ALUMÍNIOS</div>
+            <Image
+              src="/logo/logo.png"
+              alt="Elohim Vidros"
+              width={120}
+              height={40}
+              className="h-9 w-auto object-contain"
+            />
           </div>
 
           {/* Links */}
