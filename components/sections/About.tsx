@@ -8,7 +8,7 @@ export default function About() {
       {/* Background glow */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-5 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #C41830, transparent)' }}
+        style={{ background: 'radial-gradient(circle, #ffffff, transparent)' }}
       />
 
       <div className="container mx-auto px-4 max-w-6xl">
@@ -19,7 +19,7 @@ export default function About() {
             {/* Gold frame glow */}
             <div
               className="absolute -inset-1 rounded-3xl pointer-events-none"
-              style={{ background: 'radial-gradient(ellipse, rgba(196,24,48,0.12) 0%, transparent 70%)' }}
+              style={{ background: 'radial-gradient(ellipse, rgba(255,255,255,0.12) 0%, transparent 70%)' }}
             />
 
             {/* Photo */}
@@ -43,10 +43,10 @@ export default function About() {
 
             {/* Stat badge — top right */}
             <div
-              className="absolute -top-4 -right-4 glass rounded-2xl px-5 py-4 border border-[#C41830]/30"
+              className="absolute -top-4 -right-4 glass rounded-2xl px-5 py-4 border border-white/25"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
-              <div className="text-3xl font-bold text-[#C41830] leading-none">20+</div>
+              <div className="text-3xl font-bold text-white leading-none">20+</div>
               <div className="text-xs text-white/50 tracking-widest uppercase mt-1">anos de mercado</div>
             </div>
 
@@ -55,14 +55,14 @@ export default function About() {
               className="absolute -bottom-4 -left-4 glass rounded-2xl px-5 py-4 border border-white/15"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
-              <div className="text-3xl font-bold text-[#C41830] leading-none">100%</div>
+              <div className="text-3xl font-bold text-white leading-none">100%</div>
               <div className="text-xs text-white/50 tracking-widest uppercase mt-1">comprometimento</div>
             </div>
           </div>
 
           {/* Right — text */}
           <div className="md:pl-4">
-            <span className="text-xs font-semibold text-[#C41830] tracking-[0.3em] uppercase">
+            <span className="text-xs font-semibold text-white tracking-[0.3em] uppercase">
               Quem somos
             </span>
             <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white leading-tight">
@@ -73,7 +73,7 @@ export default function About() {
 
             <div
               className="mt-5 w-20 h-0.5 rounded-full"
-              style={{ background: 'linear-gradient(90deg, #C41830, #E53247, transparent)' }}
+              style={{ background: 'linear-gradient(90deg, #ffffff, #ffffff, transparent)' }}
             />
 
             <p className="mt-7 text-white/60 leading-relaxed text-base">
@@ -96,7 +96,7 @@ export default function About() {
                 { icon: '✦', text: 'Materiais de primeira linha' },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-3">
-                  <span className="text-[#C41830] text-xs">{item.icon}</span>
+                  <span className="text-white text-xs">{item.icon}</span>
                   <span className="text-white/60 text-sm">{item.text}</span>
                 </div>
               ))}
@@ -106,7 +106,7 @@ export default function About() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-8 border border-[#C41830]/40 text-[#C41830] hover:bg-[#C41830]/10 font-medium px-6 py-3 rounded-xl transition-all text-sm tracking-wide"
+              className="inline-flex items-center gap-2 mt-8 border border-white/30 text-white hover:bg-white/10 font-medium px-6 py-3 rounded-xl transition-all text-sm tracking-wide"
             >
               Fale conosco pelo WhatsApp →
             </a>

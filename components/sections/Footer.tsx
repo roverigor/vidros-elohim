@@ -43,7 +43,7 @@ export default function Footer() {
               href="https://www.instagram.com/vidroselohim"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 glass rounded-lg flex items-center justify-center text-white/50 hover:text-[#C41830] transition-colors border border-white/10"
+              className="w-9 h-9 glass rounded-lg flex items-center justify-center text-white/50 hover:text-white transition-colors border border-white/10"
               aria-label="Instagram"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">

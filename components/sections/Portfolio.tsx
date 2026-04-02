@@ -43,7 +43,7 @@ function PhotoCard({ src, alt }: PortfolioPhoto) {
       {/* Bottom aluminum bar */}
       <div
         className="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ background: 'linear-gradient(90deg, transparent, #C41830, transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, #ffffff, transparent)' }}
       />
     </div>
   );
@@ -55,7 +55,7 @@ export default function Portfolio() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-semibold text-[#C41830] tracking-[0.3em] uppercase">
+          <span className="text-xs font-semibold text-white tracking-[0.3em] uppercase">
             Nossos trabalhos
           </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white">
@@ -63,7 +63,7 @@ export default function Portfolio() {
           </h2>
           <div
             className="mt-4 mx-auto w-20 h-0.5 rounded-full"
-            style={{ background: 'linear-gradient(90deg, transparent, #C41830, transparent)' }}
+            style={{ background: 'linear-gradient(90deg, transparent, #ffffff, transparent)' }}
           />
           <p className="mt-5 text-white/50 max-w-lg mx-auto text-sm leading-relaxed">
             Projetos realizados em Ibaiti e região com qualidade e precisão.
@@ -84,7 +84,7 @@ export default function Portfolio() {
             href="https://wa.me/5543984247962?text=Ol%C3%A1%2C%20vi%20o%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento!"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 glass border border-[#C41830]/30 hover:border-[#C41830]/60 text-[#C41830] font-medium px-6 py-3 rounded-xl transition-all text-sm"
+            className="inline-flex items-center gap-2 glass border border-white/25 hover:border-white/50 text-white font-medium px-6 py-3 rounded-xl transition-all text-sm"
           >
             Solicitar orçamento →
           </a>
