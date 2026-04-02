@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Real photo background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
+        style={{ backgroundImage: 'url(/Screenshot_1.png)' }}
       />
 
       {/* Dark overlay for readability */}
