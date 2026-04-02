@@ -57,7 +57,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] hover:bg-[#20c05a] text-white text-sm font-semibold px-5 py-2 rounded-lg transition-all shadow-md shadow-[#25D366]/20"
+            className="glass shimmer-border text-white text-sm font-semibold px-5 py-2 rounded-lg hover:bg-white/10 transition-all border border-white/25"
           >
             Solicitar Orçamento
           </a>
