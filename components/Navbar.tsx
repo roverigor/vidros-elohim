@@ -16,54 +16,45 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'glass-dark shadow-lg shadow-black/40' : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-tight">
-          <span
-            className={`font-bold text-lg tracking-wide transition-colors ${
-              scrolled ? 'text-[oklch(0.26_0.07_241)]' : 'text-white'
-            }`}
-          >
+        <a href="#" className="flex flex-col leading-tight group">
+          <span className="font-bold text-base tracking-[0.15em] text-white group-hover:text-[#d4a843] transition-colors">
             ELOHIM VIDROS
           </span>
-          <span
-            className={`text-xs tracking-widest transition-colors ${
-              scrolled ? 'text-[oklch(0.71_0.13_75)]' : 'text-[oklch(0.71_0.13_75)]'
-            }`}
-          >
+          <span className="text-[10px] tracking-[0.3em] text-[#d4a843] font-light">
             ESQUADRIAS & ALUMÍNIOS
           </span>
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-[oklch(0.71_0.13_75)] ${
-                scrolled ? 'text-[oklch(0.26_0.07_241)]' : 'text-white'
-              }`}
+              className="text-sm text-white/60 hover:text-white transition-colors tracking-wide relative group"
             >
               {link.label}
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#d4a843] group-hover:w-full transition-all duration-300" />
             </a>
           ))}
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[oklch(0.71_0.13_75)] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:brightness-110 transition-all"
+            className="glass shimmer-border text-[#d4a843] text-sm font-semibold px-5 py-2 rounded-lg hover:gold-glow transition-all border border-[#d4a843]/30 hover:border-[#d4a843]/60"
           >
             Solicitar Orçamento
           </a>
@@ -72,26 +63,26 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`md:hidden p-2 rounded ${scrolled ? 'text-[oklch(0.26_0.07_241)]' : 'text-white'}`}
+          className="md:hidden p-2 text-white"
           aria-label="Menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
-            <span className={`h-0.5 bg-current transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-            <span className={`h-0.5 bg-current transition-all ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`h-0.5 bg-current transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <span className={`h-px bg-current transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`h-px bg-current transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`h-px bg-current transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </div>
         </button>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg px-4 py-4 flex flex-col gap-3">
+        <div className="md:hidden glass-dark border-t border-white/10 px-4 py-5 flex flex-col gap-4">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-[oklch(0.26_0.07_241)] font-medium py-1 border-b border-gray-100"
+              className="text-white/70 hover:text-white font-medium py-1 tracking-wide transition-colors"
             >
               {link.label}
             </a>
@@ -100,7 +91,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[oklch(0.71_0.13_75)] text-white text-center font-semibold px-4 py-2 rounded-lg mt-2"
+            className="text-center bg-[#d4a843] text-[#080c18] font-bold px-4 py-3 rounded-lg mt-1"
           >
             Solicitar Orçamento
           </a>
