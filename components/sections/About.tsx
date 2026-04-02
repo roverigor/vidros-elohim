@@ -46,7 +46,7 @@ export default function About() {
               className="absolute -top-4 -right-4 glass rounded-2xl px-5 py-4 border border-white/25"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
-              <div className="text-3xl font-bold text-white leading-none">20+</div>
+              <div className="text-3xl font-bold leading-none" style={{ background: "linear-gradient(135deg, #d4a843, #f0c96a)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>20+</div>
               <div className="text-xs text-white/50 tracking-widest uppercase mt-1">anos de mercado</div>
             </div>
 
@@ -55,7 +55,7 @@ export default function About() {
               className="absolute -bottom-4 -left-4 glass rounded-2xl px-5 py-4 border border-white/15"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
-              <div className="text-3xl font-bold text-white leading-none">100%</div>
+              <div className="text-3xl font-bold leading-none" style={{ background: "linear-gradient(135deg, #d4a843, #f0c96a)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>100%</div>
               <div className="text-xs text-white/50 tracking-widest uppercase mt-1">comprometimento</div>
             </div>
           </div>
