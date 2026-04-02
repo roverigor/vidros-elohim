@@ -7,7 +7,7 @@ export default function Footer() {
     <footer
       className="py-10 border-t"
       style={{
-        backgroundColor: '#080d1e',
+        backgroundColor: '#1a2347',
         borderColor: 'rgba(255,255,255,0.06)',
       }}
     >

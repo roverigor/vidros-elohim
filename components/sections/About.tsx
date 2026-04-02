@@ -4,7 +4,7 @@ const WHATSAPP_URL = 'https://wa.me/5543984247962?text=Ol%C3%A1%2C%20gostaria%20
 
 export default function About() {
   return (
-    <section id="sobre" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#080d1e' }}>
+    <section id="sobre" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#1a2347' }}>
       {/* Background glow */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-5 blur-3xl pointer-events-none"
@@ -38,7 +38,7 @@ export default function About() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Gradient overlay bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#080d1e]/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a2347]/40 via-transparent to-transparent" />
             </div>
 
             {/* Stat badge — top right */}

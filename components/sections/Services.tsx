@@ -53,7 +53,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-24" style={{ backgroundColor: '#0a1020' }}>
+    <section id="servicos" className="py-24" style={{ backgroundColor: '#1e2850' }}>
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">
@@ -89,7 +89,7 @@ export default function Services() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-[#080d1e]/30 group-hover:bg-[#080d1e]/10 transition-all duration-300" />
+                <div className="absolute inset-0 bg-[#1a2347]/30 group-hover:bg-[#1a2347]/10 transition-all duration-300" />
               </div>
 
               {/* Content */}

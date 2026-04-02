@@ -34,7 +34,7 @@ function PhotoCard({ src, alt }: PortfolioPhoto) {
       />
 
       {/* Glass overlay on hover */}
-      <div className="absolute inset-0 bg-[#080d1e]/0 group-hover:bg-[#080d1e]/40 transition-all duration-300 flex items-center justify-center">
+      <div className="absolute inset-0 bg-[#1a2347]/0 group-hover:bg-[#1a2347]/40 transition-all duration-300 flex items-center justify-center">
         <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 glass rounded-full px-4 py-2 border border-white/20">
           <span className="text-white text-xs font-medium tracking-wide">Ver foto</span>
         </div>
@@ -51,7 +51,7 @@ function PhotoCard({ src, alt }: PortfolioPhoto) {
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-24" style={{ backgroundColor: '#080d1e' }}>
+    <section id="portfolio" className="py-24" style={{ backgroundColor: '#1a2347' }}>
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">

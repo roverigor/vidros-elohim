@@ -41,7 +41,7 @@ function InfoItem({ icon, label, value, href, external }: InfoItemProps) {
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#0a1020' }}>
+    <section id="contato" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#1e2850' }}>
       {/* Background glow */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full opacity-5 blur-3xl pointer-events-none"

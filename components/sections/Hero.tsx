@@ -16,7 +16,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Background layers */}
-      <div className="absolute inset-0 bg-[#080d1e]" />
+      <div className="absolute inset-0 bg-[#1a2347]" />
       {/* Subtle radial glow top-left */}
       <div
         className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full pointer-events-none"
@@ -117,25 +117,25 @@ export default function Hero() {
             <div className="absolute top-0 left-0 w-[48%] h-[48%] rounded-2xl overflow-hidden"
               style={{ boxShadow: 'inset 0 0 0 1px rgba(141,168,212,0.2), 0 8px 32px rgba(0,0,0,0.4)' }}>
               <Image src={PREVIEW_PHOTOS[0]} alt="Trabalho Elohim" fill className="object-cover" sizes="25vw" />
-              <div className="absolute inset-0 bg-[#080d1e]/20" />
+              <div className="absolute inset-0 bg-[#1a2347]/20" />
             </div>
 
             <div className="absolute top-0 right-0 w-[48%] h-[58%] rounded-2xl overflow-hidden"
               style={{ boxShadow: 'inset 0 0 0 1px rgba(141,168,212,0.2), 0 8px 32px rgba(0,0,0,0.4)' }}>
               <Image src={PREVIEW_PHOTOS[1]} alt="Trabalho Elohim" fill className="object-cover" sizes="25vw" />
-              <div className="absolute inset-0 bg-[#080d1e]/20" />
+              <div className="absolute inset-0 bg-[#1a2347]/20" />
             </div>
 
             <div className="absolute bottom-0 left-0 w-[48%] h-[48%] rounded-2xl overflow-hidden"
               style={{ boxShadow: 'inset 0 0 0 1px rgba(141,168,212,0.2), 0 8px 32px rgba(0,0,0,0.4)' }}>
               <Image src={PREVIEW_PHOTOS[2]} alt="Trabalho Elohim" fill className="object-cover" sizes="25vw" />
-              <div className="absolute inset-0 bg-[#080d1e]/20" />
+              <div className="absolute inset-0 bg-[#1a2347]/20" />
             </div>
 
             <div className="absolute bottom-0 right-0 w-[48%] h-[38%] rounded-2xl overflow-hidden"
               style={{ boxShadow: 'inset 0 0 0 1px rgba(141,168,212,0.2), 0 8px 32px rgba(0,0,0,0.4)' }}>
               <Image src={PREVIEW_PHOTOS[3]} alt="Trabalho Elohim" fill className="object-cover" sizes="25vw" />
-              <div className="absolute inset-0 bg-[#080d1e]/20" />
+              <div className="absolute inset-0 bg-[#1a2347]/20" />
             </div>
 
             {/* Gold accent bar center */}
@@ -152,7 +152,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#080d1e] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#1a2347] to-transparent" />
     </section>
   );
 }
