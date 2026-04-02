@@ -2,41 +2,75 @@ import Image from 'next/image';
 
 const WHATSAPP_URL = 'https://wa.me/5543984247962?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!';
 
-const HIGHLIGHTS = [
-  {
-    label: 'Experiência',
-    value: '20+',
-    unit: 'anos',
-    desc: 'Décadas atendendo Ibaiti e região com qualidade comprovada em cada projeto.',
-  },
-  {
-    label: 'Agilidade',
-    value: '48h',
-    unit: 'orçamento',
-    desc: 'Visita técnica e orçamento detalhado em até 48 horas após contato.',
-  },
-  {
-    label: 'Garantia',
-    value: '100%',
-    unit: 'satisfação',
-    desc: 'Instalação com acompanhamento total até a sua aprovação final.',
-  },
-];
-
 export default function About() {
   return (
     <section id="sobre" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#080c18' }}>
-      {/* Background decoration */}
+      {/* Background glow */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-5 blur-3xl pointer-events-none"
         style={{ background: 'radial-gradient(circle, #d4a843, transparent)' }}
       />
 
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* Left — text */}
-          <div>
+          {/* Left — hero photo with overlaid stats */}
+          <div className="relative">
+            {/* Gold frame glow */}
+            <div
+              className="absolute -inset-1 rounded-3xl pointer-events-none"
+              style={{ background: 'radial-gradient(ellipse, rgba(212,168,67,0.12) 0%, transparent 70%)' }}
+            />
+
+            {/* Photo */}
+            <div
+              className="relative overflow-hidden rounded-2xl"
+              style={{
+                height: '480px',
+                boxShadow: '0 0 0 1px rgba(200,205,214,0.15), 0 24px 64px rgba(0,0,0,0.5)',
+              }}
+            >
+              <Image
+                src="/Screenshot_1.png"
+                alt="Equipe Elohim Vidros"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              {/* Gradient overlay bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080c18]/80 via-[#080c18]/20 to-transparent" />
+
+              {/* Bottom label */}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-white/50 text-xs tracking-[0.25em] uppercase mb-1">Nossa equipe</p>
+                <p className="text-white font-semibold text-lg leading-snug">
+                  Tradição e qualidade<br />
+                  <span className="text-[#d4a843]">desde o primeiro dia</span>
+                </p>
+              </div>
+            </div>
+
+            {/* Stat badge — top right */}
+            <div
+              className="absolute -top-4 -right-4 glass rounded-2xl px-5 py-4 border border-[#d4a843]/30"
+              style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
+            >
+              <div className="text-3xl font-bold text-[#d4a843] leading-none">20+</div>
+              <div className="text-xs text-white/50 tracking-widest uppercase mt-1">anos de mercado</div>
+            </div>
+
+            {/* Stat badge — bottom left */}
+            <div
+              className="absolute -bottom-4 -left-4 glass rounded-2xl px-5 py-4 border border-white/15"
+              style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
+            >
+              <div className="text-3xl font-bold text-[#d4a843] leading-none">100%</div>
+              <div className="text-xs text-white/50 tracking-widest uppercase mt-1">comprometimento</div>
+            </div>
+          </div>
+
+          {/* Right — text */}
+          <div className="md:pl-4">
             <span className="text-xs font-semibold text-[#d4a843] tracking-[0.3em] uppercase">
               Quem somos
             </span>
@@ -46,12 +80,9 @@ export default function About() {
               <span className="text-[#c8cdd6]">e alumínios</span>
             </h2>
 
-            {/* Aluminum accent bar */}
             <div
               className="mt-5 w-20 h-0.5 rounded-full"
-              style={{
-                background: 'linear-gradient(90deg, #d4a843, #f0c96a, transparent)',
-              }}
+              style={{ background: 'linear-gradient(90deg, #d4a843, #f0c96a, transparent)' }}
             />
 
             <p className="mt-7 text-white/60 leading-relaxed text-base">
@@ -66,6 +97,20 @@ export default function About() {
               materiais de primeira linha e um atendimento que respeita prazo e orçamento.
             </p>
 
+            {/* Highlights inline */}
+            <div className="mt-8 flex flex-col gap-3">
+              {[
+                { icon: '✦', text: 'Atendemos Ibaiti e toda a região' },
+                { icon: '✦', text: 'Projetos residenciais e comerciais' },
+                { icon: '✦', text: 'Materiais de primeira linha' },
+              ].map((item) => (
+                <div key={item.text} className="flex items-center gap-3">
+                  <span className="text-[#d4a843] text-xs">{item.icon}</span>
+                  <span className="text-white/60 text-sm">{item.text}</span>
+                </div>
+              ))}
+            </div>
+
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -74,53 +119,6 @@ export default function About() {
             >
               Fale conosco pelo WhatsApp →
             </a>
-          </div>
-
-          {/* Right — team photo + stat cards */}
-          <div className="flex flex-col gap-4">
-            {/* Team photo */}
-            <div
-              className="relative overflow-hidden rounded-2xl"
-              style={{
-                boxShadow: '0 0 40px rgba(212,168,67,0.10), inset 0 0 0 1px rgba(200,205,214,0.15)',
-              }}
-            >
-              <Image
-                src="/Screenshot_1.png"
-                alt="Equipe Elohim Vidros"
-                width={600}
-                height={360}
-                className="w-full object-cover"
-                style={{ maxHeight: '220px' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#080c18]/60 to-transparent" />
-              <div className="absolute bottom-3 left-4">
-                <span className="text-white/70 text-xs tracking-widest uppercase">Nossa equipe</span>
-              </div>
-            </div>
-
-            {HIGHLIGHTS.map((item) => (
-              <div
-                key={item.label}
-                className="glass glass-hover aluminum-surface rounded-2xl p-6 transition-all duration-300 cursor-default"
-              >
-                <div className="flex items-start gap-5">
-                  <div className="flex-shrink-0 text-right">
-                    <div className="text-3xl font-bold text-[#d4a843] leading-none">
-                      {item.value}
-                    </div>
-                    <div className="text-xs text-[#c8cdd6] tracking-widest uppercase mt-1">
-                      {item.unit}
-                    </div>
-                  </div>
-                  <div className="w-px self-stretch bg-white/10" />
-                  <div>
-                    <div className="text-white font-medium text-sm tracking-wide">{item.label}</div>
-                    <div className="text-white/50 text-sm mt-1 leading-relaxed">{item.desc}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
