@@ -57,7 +57,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass shimmer-border text-white text-sm font-semibold px-5 py-2 rounded-lg hover:gold-glow transition-all border border-white/25 hover:border-white/50"
+            className="bg-[#25D366] hover:bg-[#20c05a] text-white text-sm font-semibold px-5 py-2 rounded-lg transition-all shadow-md shadow-[#25D366]/20"
           >
             Solicitar Orçamento
           </a>
@@ -94,7 +94,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-center bg-white text-[#1a2347] font-bold px-4 py-3 rounded-lg mt-1"
+            className="text-center bg-[#25D366] hover:bg-[#20c05a] text-white font-bold px-4 py-3 rounded-lg mt-1"
           >
             Solicitar Orçamento
           </a>
