@@ -21,10 +21,10 @@ function InfoItem({ icon, label, value, href, external }: InfoItemProps) {
       className="flex items-center gap-4 glass aluminum-surface glass-hover rounded-xl p-4 transition-all duration-300 group"
     >
       <div
-        className="w-10 h-10 rounded-lg flex items-center justify-center text-[#d4a843] shrink-0"
+        className="w-10 h-10 rounded-lg flex items-center justify-center text-[#C41830] shrink-0"
         style={{
-          background: 'rgba(212, 168, 67, 0.1)',
-          border: '1px solid rgba(212, 168, 67, 0.2)',
+          background: 'rgba(196, 24, 48, 0.1)',
+          border: '1px solid rgba(196, 24, 48, 0.2)',
         }}
       >
         {icon}
@@ -41,17 +41,17 @@ function InfoItem({ icon, label, value, href, external }: InfoItemProps) {
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#0a0e1a' }}>
+    <section id="contato" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#0a1020' }}>
       {/* Background glow */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full opacity-5 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #d4a843, transparent)' }}
+        style={{ background: 'radial-gradient(circle, #C41830, transparent)' }}
       />
 
       <div className="container mx-auto px-4 max-w-6xl relative">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-semibold text-[#d4a843] tracking-[0.3em] uppercase">
+          <span className="text-xs font-semibold text-[#C41830] tracking-[0.3em] uppercase">
             Fale conosco
           </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white">
@@ -59,7 +59,7 @@ export default function Contact() {
           </h2>
           <div
             className="mt-4 mx-auto w-20 h-0.5 rounded-full"
-            style={{ background: 'linear-gradient(90deg, transparent, #d4a843, transparent)' }}
+            style={{ background: 'linear-gradient(90deg, transparent, #C41830, transparent)' }}
           />
           <p className="mt-5 text-white/50 max-w-md mx-auto text-sm leading-relaxed">
             Solicite seu orçamento sem compromisso. Respondemos rapidamente!

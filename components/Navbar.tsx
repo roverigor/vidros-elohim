@@ -50,14 +50,14 @@ export default function Navbar() {
               className="text-sm text-white/60 hover:text-white transition-colors tracking-wide relative group"
             >
               {link.label}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#d4a843] group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#C41830] group-hover:w-full transition-all duration-300" />
             </a>
           ))}
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass shimmer-border text-[#d4a843] text-sm font-semibold px-5 py-2 rounded-lg hover:gold-glow transition-all border border-[#d4a843]/30 hover:border-[#d4a843]/60"
+            className="glass shimmer-border text-[#C41830] text-sm font-semibold px-5 py-2 rounded-lg hover:gold-glow transition-all border border-[#C41830]/30 hover:border-[#C41830]/60"
           >
             Solicitar Orçamento
           </a>
@@ -94,7 +94,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-center bg-[#d4a843] text-[#080c18] font-bold px-4 py-3 rounded-lg mt-1"
+            className="text-center bg-[#C41830] text-white font-bold px-4 py-3 rounded-lg mt-1"
           >
             Solicitar Orçamento
           </a>

@@ -4,11 +4,11 @@ const WHATSAPP_URL = 'https://wa.me/5543984247962?text=Ol%C3%A1%2C%20gostaria%20
 
 export default function About() {
   return (
-    <section id="sobre" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#080c18' }}>
+    <section id="sobre" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#080d1e' }}>
       {/* Background glow */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-5 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #d4a843, transparent)' }}
+        style={{ background: 'radial-gradient(circle, #C41830, transparent)' }}
       />
 
       <div className="container mx-auto px-4 max-w-6xl">
@@ -19,7 +19,7 @@ export default function About() {
             {/* Gold frame glow */}
             <div
               className="absolute -inset-1 rounded-3xl pointer-events-none"
-              style={{ background: 'radial-gradient(ellipse, rgba(212,168,67,0.12) 0%, transparent 70%)' }}
+              style={{ background: 'radial-gradient(ellipse, rgba(196,24,48,0.12) 0%, transparent 70%)' }}
             />
 
             {/* Photo */}
@@ -27,7 +27,7 @@ export default function About() {
               className="relative overflow-hidden rounded-2xl"
               style={{
                 height: '480px',
-                boxShadow: '0 0 0 1px rgba(200,205,214,0.15), 0 24px 64px rgba(0,0,0,0.5)',
+                boxShadow: '0 0 0 1px rgba(141,168,212,0.15), 0 24px 64px rgba(0,0,0,0.5)',
               }}
             >
               <Image
@@ -38,15 +38,15 @@ export default function About() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Gradient overlay bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#080c18]/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080d1e]/40 via-transparent to-transparent" />
             </div>
 
             {/* Stat badge — top right */}
             <div
-              className="absolute -top-4 -right-4 glass rounded-2xl px-5 py-4 border border-[#d4a843]/30"
+              className="absolute -top-4 -right-4 glass rounded-2xl px-5 py-4 border border-[#C41830]/30"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
-              <div className="text-3xl font-bold text-[#d4a843] leading-none">20+</div>
+              <div className="text-3xl font-bold text-[#C41830] leading-none">20+</div>
               <div className="text-xs text-white/50 tracking-widest uppercase mt-1">anos de mercado</div>
             </div>
 
@@ -55,25 +55,25 @@ export default function About() {
               className="absolute -bottom-4 -left-4 glass rounded-2xl px-5 py-4 border border-white/15"
               style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
-              <div className="text-3xl font-bold text-[#d4a843] leading-none">100%</div>
+              <div className="text-3xl font-bold text-[#C41830] leading-none">100%</div>
               <div className="text-xs text-white/50 tracking-widest uppercase mt-1">comprometimento</div>
             </div>
           </div>
 
           {/* Right — text */}
           <div className="md:pl-4">
-            <span className="text-xs font-semibold text-[#d4a843] tracking-[0.3em] uppercase">
+            <span className="text-xs font-semibold text-[#C41830] tracking-[0.3em] uppercase">
               Quem somos
             </span>
             <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white leading-tight">
               Tradição em vidros
               <br />
-              <span className="text-[#c8cdd6]">e alumínios</span>
+              <span className="text-[#8da8d4]">e alumínios</span>
             </h2>
 
             <div
               className="mt-5 w-20 h-0.5 rounded-full"
-              style={{ background: 'linear-gradient(90deg, #d4a843, #f0c96a, transparent)' }}
+              style={{ background: 'linear-gradient(90deg, #C41830, #E53247, transparent)' }}
             />
 
             <p className="mt-7 text-white/60 leading-relaxed text-base">
@@ -96,7 +96,7 @@ export default function About() {
                 { icon: '✦', text: 'Materiais de primeira linha' },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-3">
-                  <span className="text-[#d4a843] text-xs">{item.icon}</span>
+                  <span className="text-[#C41830] text-xs">{item.icon}</span>
                   <span className="text-white/60 text-sm">{item.text}</span>
                 </div>
               ))}
@@ -106,7 +106,7 @@ export default function About() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-8 border border-[#d4a843]/40 text-[#d4a843] hover:bg-[#d4a843]/10 font-medium px-6 py-3 rounded-xl transition-all text-sm tracking-wide"
+              className="inline-flex items-center gap-2 mt-8 border border-[#C41830]/40 text-[#C41830] hover:bg-[#C41830]/10 font-medium px-6 py-3 rounded-xl transition-all text-sm tracking-wide"
             >
               Fale conosco pelo WhatsApp →
             </a>

@@ -53,11 +53,11 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-24" style={{ backgroundColor: '#0a0e1a' }}>
+    <section id="servicos" className="py-24" style={{ backgroundColor: '#0a1020' }}>
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-semibold text-[#d4a843] tracking-[0.3em] uppercase">
+          <span className="text-xs font-semibold text-[#C41830] tracking-[0.3em] uppercase">
             O que fazemos
           </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white">
@@ -65,7 +65,7 @@ export default function Services() {
           </h2>
           <div
             className="mt-4 mx-auto w-20 h-0.5 rounded-full"
-            style={{ background: 'linear-gradient(90deg, transparent, #d4a843, transparent)' }}
+            style={{ background: 'linear-gradient(90deg, transparent, #C41830, transparent)' }}
           />
           <p className="mt-5 text-white/50 max-w-lg mx-auto text-sm leading-relaxed">
             Soluções completas em vidros e alumínios para residências, comércios e indústrias.
@@ -78,7 +78,7 @@ export default function Services() {
             <div
               key={service.title}
               className="group glass aluminum-surface rounded-2xl overflow-hidden flex flex-col transition-all duration-300"
-              style={{ border: '1px solid rgba(200,205,214,0.12)' }}
+              style={{ border: '1px solid rgba(141,168,212,0.12)' }}
             >
               {/* Photo */}
               <div className="relative w-full aspect-video overflow-hidden">
@@ -89,12 +89,12 @@ export default function Services() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-[#080c18]/30 group-hover:bg-[#080c18]/10 transition-all duration-300" />
+                <div className="absolute inset-0 bg-[#080d1e]/30 group-hover:bg-[#080d1e]/10 transition-all duration-300" />
               </div>
 
               {/* Content */}
               <div className="flex flex-col flex-1 p-4">
-                <h3 className="font-semibold text-white text-sm mb-1.5 leading-tight group-hover:text-[#d4a843] transition-colors">
+                <h3 className="font-semibold text-white text-sm mb-1.5 leading-tight group-hover:text-[#C41830] transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-white/40 text-xs leading-relaxed flex-1">
