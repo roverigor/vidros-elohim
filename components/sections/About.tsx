@@ -38,16 +38,7 @@ export default function About() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Gradient overlay bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#080c18]/80 via-[#080c18]/20 to-transparent" />
-
-              {/* Bottom label */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-white/50 text-xs tracking-[0.25em] uppercase mb-1">Nossa equipe</p>
-                <p className="text-white font-semibold text-lg leading-snug">
-                  Tradição e qualidade<br />
-                  <span className="text-[#d4a843]">desde o primeiro dia</span>
-                </p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080c18]/40 via-transparent to-transparent" />
             </div>
 
             {/* Stat badge — top right */}
